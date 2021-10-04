@@ -17,4 +17,5 @@ A new flutter plugin project.
   s.dependency 'Flutter'
   s.dependency 'Stripe', '~> 19.4.0'
   s.ios.deployment_target = '10.0'
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
